@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            background-image:url(Caribbean-Beaches.jpg);background-repeat:no-repeat;background-size:cover;
+        }
+        header{
+            height:200px;
+            width:100%;
+        }
+        .navbar{
+            /* float:right;   or   */
+            display:flex;
+            justify-content:right;
+            padding:30px 20px;
+        } 
+        nav span{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+            font-size:16px;
+            font-weight:bold;
+            padding:20px 15px;
+        }
+        nav span:hover{
+            color:red;
+            text-decoration:underline;
+            cursor:pointer;
+        }
+        .logo{
+            position:absolute;
+            width:150px;
+            height:180px;
+            left:20px;
+        }
+        .line{
+            border:1px solid orangered;
+            width:620px;
+            left:620px;
+            top:100px;
+            position:absolute;
+        }
+        .container3{
+            display:flex;
+        }
+        .text{
+            border:3px solid red;
+            border-radius:10px ;
+            text-align:center;
+            height:300px;
+            width:40%;
+            margin-left:10px;
+            margin-right:50px;
+        }
+        div p{
+            animation-name:zoom-in-zoom-out;
+            animation-duration:10s;
+            color:red;
+            font-size:20px;
+            font-size:bold;
+            padding:130px;
+        }
+        @keyframes zoom-in-zoom-out {
+            0% {
+                color:rgb(255, 0, 251);
+                transform: scale(1, 1);
+            }
+            25% {
+                color:rgb(251, 255, 0);
+                transform: scale(1, 1);
+            }
+            50% {
+                color:rgb(0, 0, 0);;
+                transform: scale(3, 3);
+            }
+            75%{
+                color:rgb(221, 255, 0);
+                transform: scale(1.5, 1.5);
+            }
+            100% {
+                color:rgb(255, 0, 0);
+                transform: scale(1, 1);
+            }
+        }
+        .table{
+            border-radius:10px ;
+            border:3px solid red;
+            border-top:10px solid red;
+            height:600px;
+            width:50%;
+        }
+        .img{
+            text-align:center;
+            height:110px;
+        }
+        .lineform{
+            border:2px solid red;
+        }
+        h2{
+            font-family:cursive;
+            text-align:center;
+        }
+        label{
+            margin-left:5px;
+        }
+        select,input{
+            margin-left:20px
+        }
+        textarea{
+            margin-left:5px;
+        }
+        .submit{
+            border:1px solid red ;background-color:grey; color: yellow; width:80px; height:30px
+        }
+        .reset{
+            border:1px solid red ;background-color:grey; color: yellow; width:80px; height:30px
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="https://www.mptourism.com/images/logo.png" alt="LOGO">
+        <nav class="navbar">
+            <span>EXPLORE</span>
+            <span>EXPERIENCE</span>
+            <span>PLAN YOUR TRIP</span>
+            <span>BLOGS</span>
+            <span><i class="fa-solid fa-magnifying-glass"></i> SEARCH</span>
+        </nav>
+        <hr class="line">
+    </header>
+    <!-- --------------------------------------------------------------------------------- -->
+    <div class="container3">
+        <div class="text">
+            <p>MP TOURSIM !!</p>
+        </div>
+        <div class="table">
+            <form action="action.php">
+                <br>
+                <div class="img">
+                    <img src="Logo.png" alt="flight">
+                </div><hr class="lineform">
+                <h2>Traveler's Booking Form</h2><br>
+
+                <label for="First"> TRAVELER-1 : </label>
+                <input type="text" name="name" id="First" placeholder="Full name">
+                <label for="mail"> EMAIL-ID : </label>
+                <input type="email" name="email" id="mail" placeholder="Email"><br><br>
+                <label for="datein"> Date of Birth : </label>
+                <input type="date" name="Datein" id="datein">
+                <label for="mob_no1"> Mobile no. : </label>
+                <input type="tel" id="mob_no1" name="Mobile no." placeholder="Number"><br><br>
+
+
+                <label for="First"> TRAVELER-2 : </label>
+                <input type="text" name="name" id="First" placeholder="Full name">
+                <label for="mail"> EMAIL-ID : </label>
+                <input type="email" name="email" id="mail" placeholder="Email"><br><br>
+                <label for="datein"> Date of Birth : </label>
+                <input type="date" name="Datein" id="datein">
+                <label for="mob_no2"> Mobile no. : </label>
+                <input type="tel" id="mob_no2" name="Mobile no." placeholder="Number"><br><br><br>
+
+
+                <label for="datein">CHECK-IN Date : </label>
+                <input type="date" name="Datein" id="datein"><br><br>
+                <label for="dateout">CHECK-OUT Date </label>
+                <input type="date" name="Dateout" id="dateout"><br><br>
+    
+                <label for="destination"> DESTINATION : </label>
+                <textarea type="description" name="Descrition box" placeholder="Describe about your Destination"></textarea><br><br>
+    
+                
+                <div style="text-align:center">
+                <input class="submit" type="Submit">
+                <input class="reset" type="Reset">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

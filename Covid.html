@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e9ae004eaa.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="MP_Tourism.css"> -->
+    <title>COVID_GUIDLINES</title>
+    <style>
+    body{
+        box-shadow:0 0 10px 5px blue;
+    }
+    header{
+        height:200px;
+        width:100%;
+    }
+    .navbar{
+        /* float:right;   or   */
+        display:flex;
+        justify-content:right;
+        padding:30px 20px;
+    } 
+    nav span{
+        color:rgb(0, 80, 252);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+        font-size:16px;
+        font-weight:bold;
+        padding:20px 15px;
+    }
+    nav span:hover{
+        color:red;
+        text-decoration:underline;
+        cursor:pointer;
+    }
+    .logo{
+        position:absolute;
+        width:150px;
+        height:180px;
+        left:20px;
+    }
+    .line{
+        border:1px solid orangered;
+        width:620px;
+        left:620px;
+        top:100px;
+        position:absolute;
+    }
+    .covid_image{
+        background-image:url("covid.jpg");
+        background-size:cover;
+        height:300px;
+        margin-top:-20px;
+    }
+    div h2{
+        color:white;
+        margin-left:530px;
+        padding:150px 0;
+    }
+    .main_box{
+        height:700px;
+        background-image:linear-gradient(to left,#F6EFA7,#FF0078);
+    }
+    .notice_box1{
+        float:left; 
+        /* display:inline-block; */
+        border:3px solid black;
+        background-color:brown;
+        height:500px;
+        width:500px;
+        margin:50px;
+    }
+    li{
+        font-size:20px;
+    }
+    .notice_box2{
+        float:left;
+        height:200px;
+        width:500px;
+        margin-top:100px;
+        padding:30px;
+    }
+    .notice_box2 a{
+        color:rgb(0, 55, 255);
+    }
+    .notice_box2 a:hover{
+        color:rgb(255, 0, 0);
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="https://www.mptourism.com/images/logo.png" alt="LOGO">
+        <nav class="navbar">
+            <span>EXPLORE</span>
+            <span>EXPERIENCE</span>
+            <span>PLAN YOUR TRIP</span>
+            <span>BLOGS</span>
+            <span><i class="fa-solid fa-magnifying-glass"></i> SEARCH</span>
+        </nav>
+        <hr class="line">
+    </header>
+    <div class="covid_image">
+        <h2>COVID NOTIFICATION</h2>
+    </div>
+    <div class="main_box">
+        <div class="notice_box1">
+            <p style="font-size:25px;color:yellow;font-weight:bold; margin-left:30px;"> COVID_19<br>Prevention Measure </p>
+            <hr style="border:1.5px solid black;width:498px;margin-top:30px">
+            <p><ul>
+                    <li>There would be no lockdown in Madhya Pradesh on sunday.</li>
+                    <li>NO separate approval / e-pass will be require for inter state travel.</li>
+                    <li>All the ASI monuments and religious places will remain accessible to the travelers.</li>
+                    <li>Tourists may download Sarthak Lite App to avail COVID-19 related medical assistance.</li>
+                    <li>For any tourism related assistance call on 1800 233 7777.</li>
+                    <li>For any query do call on MP State Helpline- 104 or 1075.</li>
+                    <li>( National Helpline Number ) for health assistance.</li>
+            </ul></p>
+        </div>
+        <div class="notice_box2">
+            <ul>
+                <li><a href="#">Guidelines For Wildlife Tourism</a></li>
+                <li><a href="#">Operational Recommendations For Tourism Service Providers</a></li>
+                <li><a href="#">Guidelines For Temples And Religious Places</a></li>
+                <li><a href="#">Guidelines For Hotels And Accomodations</a></li>
+                <li><a href="#">Learn more about SAATHI Initiative on Covid-19 for Hospitality Industry</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+/* ----------------------------Main box = header------------------------------------------------------- */
+.container1{                                    
+    height:55vw; 
+}
+.navbar{
+    /* float:right;   or   */
+    display:flex;
+    justify-content:right;
+    padding:3vw 2vw;
+} 
+nav span{
+    color:rgb(0, 80, 252);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-size:16px;
+    font-weight:bold;
+    padding:.1vw 1vw;
+}
+nav span:hover{
+    color:red;
+    text-decoration:underline;
+    cursor:pointer;
+}
+.logo{
+    position:absolute;
+    width:150px;
+    height:180px;
+    left:20px;
+}
+.line{
+    border:1px solid orangered;
+    width:620px;
+    left:620px;
+    top:100px;
+    position:absolute;
+}
+.container1 button{
+    color:white;
+    border:2px solid red; 
+    width:350px;height:80px;border-radius:10px;
+    margin-left:800px;
+    margin-top:50px;
+    background-color:purple;
+    text-align:left;
+    padding:0 10px;
+}
+.container1 button:hover{
+    background-color:brown;
+}
+#video{
+    position:absolute;
+    width:100%;
+    z-index:-1;
+    top:0;left:0;
+}
+
+/* ------------------------Box2 = div with deer img as background ------------------------------------- */
+.container2{
+    background:url("Deer.jpg");
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-size:cover;
+    width:100%;
+    height:1200px;
+}
+
+.tour-detail{
+    border:1px solid grey;
+    border-radius:10px;
+    height:500px;
+    width:500px;
+    box-shadow:0 0 10px;
+    text-align:center;
+}
+
+#tour1{
+    position:relative;
+    left:80px;
+    top:20px;
+    background-image: linear-gradient(red,yellow);
+}
+#tour2{
+    position:relative;
+    left:650px;
+    top:-400px;
+    background-image: linear-gradient(red,yellow);
+}
+#tour3{
+    position:relative;
+    left:80px;
+    top:-400px;
+}
+#tour4{
+    position:relative;
+    left:650px;
+    top:-830px;
+}
+.image{
+    border:2px solid red;
+    box-shadow:0 0 10px;
+    width:95%;
+    height:280px;
+}
+.rating{
+    border:1px solid blue;
+    border-radius:5px;
+    background-color:blue;
+    color:white;
+    margin-left:40px;
+}
+.rating1{
+    border:1px solid greenyellow;
+    background-color:greenyellow;
+    margin-left:40px;
+}
+.heading{
+    /* p ki heading */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    font-size:20px;
+}
+.para1{
+    font-family:'Times New Roman';
+}
+.para2{
+    color:white;
+    font-family:'Times New Roman';
+}
+.container2 button{
+    background-color:blue;
+    border-radius:5px;
+    color:white;
+    padding:5px;
+}
+.container2 button:hover{
+    background-color:green;
+    color:black;
+    padding:7px;
+}
+
+/* ----------------------Container 3 -------------------------------------------------------------------- */
+.vidwelcome{
+    height:400px;
+    width:800px;
+    margin:auto;
+    padding: 130px;
+    background-image:linear-gradient(aqua,lightgreen);
+    border:2px solid black;
+    box-shadow:0 0 10px 10px blue;
+    text-align:center;
+}
+.social12{
+    text-align:center;
+}
+.social345{
+    text-align:center;
+}
+.social67{
+    text-align:center;
+}
